@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+
+html {
+  font-size: 62.5%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  background-image: url("../image/kingyo.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+@media (max-width: 768px) {
+  .box {
+    height: 250px;
+  }
+}
+#shop{
+  display: flex;
+  flex-direction:row;
+}
+@media (max-width: 768px) {
+  #shop {
+    flex-direction:column;
+  }
+}
+
+
+#shop .shop_box{
+  flex:1;
+  background-color: #D8D8D8;
+  margin: 20px;
+}
+#shop .shop_box h3{
+  background-color: #A9E2F3;
+  padding: 10px;
+}
+#shop .shop_box p{
+  padding: 10px;
+}
+
+header .intro{
+  padding:30px;
+}
+
+.insta_button {
+  width: 100px;
+  background-color: #58ACFA;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
